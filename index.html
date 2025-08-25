@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lado Eme</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5EDE4;
+      color: #3B2B1F;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 80px;
+      flex: 1;
+    }
+    .left { max-width: 50%; }
+    .logo { max-width: 120px; margin-bottom: 30px; }
+    h1 {
+      font-size: 3.2rem; font-weight: 700; line-height: 1.2; margin-bottom: 30px;
+    }
+    .icons img { max-width: 200px; margin-top: 10px; }
+    .right { text-align: left; max-width: 40%; }
+    .right h2 { font-size: 1.1rem; color: #D97A0A; margin-bottom: 10px; }
+    .right p, .right a {
+      font-size: 1rem; color: #D97A0A; text-decoration: none; line-height: 1.6;
+    }
+    .right a:hover { text-decoration: underline; }
+    .catalogo h3 { font-size: 1.1rem; color: #D97A0A; margin-top: 30px; margin-bottom: 5px; }
+    .catalogo p { font-size: 0.95rem; margin-bottom: 15px; }
+    .btn {
+      display: inline-block; background-color: #3B2B1F; color: white; font-weight: bold;
+      padding: 12px 30px; border-radius: 25px; text-decoration: none; transition: 0.3s;
+    }
+    .btn:hover { background-color: #5c4332; }
+    @media (max-width: 900px) {
+      .container { flex-direction: column; text-align: center; padding: 40px 20px; }
+      .left, .right { max-width: 100%; margin-bottom: 30px; }
+      h1 { font-size: 2.2rem; }
+      .logo { margin: 0 auto 20px; }
+      .right { text-align: center; }
+      .icons img { max-width: 150px; margin: 20px auto 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img src="logo.png" alt="Lado Eme Logo" class="logo">
+      <h1>Diseño<br>Comunicación<br>Ilustración</h1>
+      <div class="icons">
+        <img src="iconos.png" alt="Íconos Lado Eme">
+      </div>
+    </div>
+    <div class="right">
+      <h2>Contacto</h2>
+      <p><a href="tel:+5491168288322">11.6828.8322</a></p>
+      <p><a href="mailto:ladoeme.dg@gmail.com" rel="noopener noreferrer">ladoeme.dg@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/ladoeme" target="_blank" rel="noopener noreferrer">@ladoeme</a></p>
+      <p><a href="https://www.behance.net/ladoeme" target="_blank" rel="noopener noreferrer">Behance</a></p>
+      <div class="catalogo">
+        <h3>Descargá el Catálogo</h3>
+        <p>de nuestros productos</p>
+        <a href="catalogo.pdf" class="btn" download>DESCARGAR</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
