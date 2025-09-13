@@ -38,9 +38,13 @@
       height: auto;
     }
 
-    .texto img {
-      max-width: 400px;
-      height: auto;
+    /* Texto reemplazado (achicado un tercio respecto al anterior 7rem) */
+    .texto h1 {
+      font-size: 4.7rem; 
+      font-weight: 800;
+      line-height: 1.2;
+      color: #3b2b1f;
+      margin: 0;
     }
 
     .iconos img {
@@ -75,7 +79,7 @@
     .btn {
       display: inline-block;
       background-color: #d47b1f;
-      color: white;
+      color: #f4ecdf; /* mismo color del fondo para el texto */
       padding: 0.8rem 1.5rem;
       border-radius: 20px;
       text-decoration: none;
@@ -92,8 +96,11 @@
         grid-template-columns: 1fr;
         text-align: center;
       }
-      .logo img, .texto img, .iconos img {
+      .logo img, .iconos img {
         margin: 0 auto;
+      }
+      .texto h1 {
+        font-size: 3.2rem; /* proporcional en mobile */ 
       }
     }
   </style>
@@ -105,7 +112,7 @@
         <img src="Logo.png" alt="Logo Lado Eme">
       </div>
       <div class="texto">
-        <img src="Texto.png" alt="Diseño Comunicación Ilustración">
+        <h1>Diseño<br>Comunicación<br>Ilustración</h1>
       </div>
       <div class="iconos">
         <img src="iconos.png" alt="Íconos ilustrativos">
@@ -119,7 +126,7 @@
           <a href="https://wa.me/5491168288322" target="_blank">11.6828.8322</a>
         </p>
         <p>
-          <a href="mailto:ladoeme@gmail.com">ladoeme.dg@gmail.com</a>
+          <a href="mailto:ladoeme.dg@gmail.com">ladoeme.dg@gmail.com</a>
         </p>
         <p>
           <a href="https://instagram.com/ladoeme" target="_blank">@ladoeme</a>
